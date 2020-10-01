@@ -9,3 +9,4 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - uses: michaelw90/PHP-Lint@master
+            - uses: symfonycorp/security-checker-action@v2
