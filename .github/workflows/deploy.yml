@@ -7,6 +7,9 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
-            - uses: michaelw90/PHP-Lint@master
-            - uses: symfonycorp/security-checker-action@v2
+            - name: Init project
+                uses: actions/checkout@v2
+            - name: PHP Linter
+                uses: michaelw90/PHP-Lint@master
+            - name: Security Checker
+                uses: symfonycorp/security-checker-action@v2
